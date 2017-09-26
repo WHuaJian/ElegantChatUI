@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by William on 17-9-20 下午4:10
+  ~ Copyright (c) 2017. All rights reserved.
+  ~
+  ~ Last modified 17-8-30 下午3:00
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E9E9E9"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="2015-12-25"
+        android:textColor="#d4d4d4"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/avatar"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/avatar"
+            android:text="William" />
+
+        <RelativeLayout
+            android:id="@+id/rlMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/name"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="5dp"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/text_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:background="@drawable/chat_send_4"
+                android:maxWidth="230dp"
+                android:minWidth="50dp"
+                android:text="在学校有事吗"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/img_message"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

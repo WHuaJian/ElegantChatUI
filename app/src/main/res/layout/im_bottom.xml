@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:padding="14dp">
+
+    <EditText
+        android:id="@+id/imChatInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:background="@drawable/chat_edit_bg"
+        android:maxHeight="200dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/chat_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:minWidth="50dp"
+            android:text="发送"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#cccccc"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/img_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:minWidth="50dp"
+            android:text="图片"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#4a4a4a"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</LinearLayout>
