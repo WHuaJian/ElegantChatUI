@@ -8,7 +8,7 @@
 
   | Preview                        |
   |:------------------------------:|
-  |![](image/screenshot.gif)       |
+  |![](image/mvcIlVbHoC.gif)       |
 
 
 ##Download
